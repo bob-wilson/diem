@@ -1201,6 +1201,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "criterion-cpu-time"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "63aaaf47e457badbcb376c65a49d0f182c317ebd97dc6d1ced94c8e1d09c0f3a"
+dependencies = [
+ "criterion",
+ "libc",
+]
+
+[[package]]
 name = "criterion-plot"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3938,6 +3948,7 @@ dependencies = [
  "anyhow",
  "bytecode-verifier",
  "criterion",
+ "criterion-cpu-time",
  "diem-proptest-helpers",
  "diem-state-view",
  "diem-types",
@@ -4022,9 +4033,9 @@ checksum = "830d08ce1d1d941e6b30645f1a0eb5643013d835ce3779a5fc208261dbe10f55"
 
 [[package]]
 name = "libc"
-version = "0.2.89"
+version = "0.2.92"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "538c092e5586f4cdd7dd8078c4a79220e3e168880218124dcbce860f0ea938c6"
+checksum = "56d855069fafbb9b344c0f962150cd2c1187975cb1c22c1522c240d8c4986714"
 
 [[package]]
 name = "libfuzzer-sys"
